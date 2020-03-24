@@ -1,4 +1,4 @@
-class PopupImg {
+ export class PopupImg {
     constructor (popupElement1){
        this.popupImgElement = popupElement1;
        let popupImgClose = this.popupImgElement.querySelector(".popup-img__close");

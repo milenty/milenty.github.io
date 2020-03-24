@@ -1,4 +1,4 @@
-class CardList {
+export class CardList {
     constructor (cardListElement) {
         this.cardListElement = cardListElement;
         //Массив хранит ключ-значение

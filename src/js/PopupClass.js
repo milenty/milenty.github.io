@@ -1,4 +1,4 @@
-class Popup {
+export class Popup {
     constructor (popupElement1, cardList1, newCard1, api) {
       //Записываем узел с формой
       this.popupElement = popupElement1;

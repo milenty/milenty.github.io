@@ -1,4 +1,4 @@
-class UserInfo {
+export class UserInfo {
     constructor (api){
         //Хранит информацию о данных пользователя
         //this.setUserInfo(name1,infoJob1);

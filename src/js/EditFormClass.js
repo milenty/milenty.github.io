@@ -1,4 +1,4 @@
-class PopupEdit  {
+export class PopupEdit  {
     constructor (popupElement1, userInfo1) {
         this.popupEditElement = popupElement1;//Узел в html разметке
         this.userEditInfo = userInfo1;

@@ -7,12 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -27,7 +28,7 @@
     </div>
     <div class="popup-edit">
       <div class="popup-edit__content">
-        <img src="./images/close.svg" alt="" class="popup-edit__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup-edit__close">
         <h3 class="popup-edit__title">Редактировать профиль</h3>
         <form class="popup-edit__form" name="second">
           <input id="popup-edit-name" type="text" name="name"
@@ -64,7 +65,7 @@
     </div>
     <div class="popup-img">
       <div class="popup-img__content">
-        <img src="./images/close.svg" alt="" class="popup-img__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup-img__close">
         <form class="popup-img__form" name="imgform">
           <img src="" alt="" class="popup-img__img">
           <div class="popup-img__img"></div>
@@ -73,7 +74,7 @@
     </div>
     <div class="popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new" novalidate>
           <input id="popup-form-name" type="text" name="name"
@@ -89,16 +90,17 @@
       </div>
     </div>
   </div>
-  <script src="js/initialCards.js"></script>
-  <script src="js/CardClass.js"></script>
-  <script src="js/CardListClass.js"></script>
-  <script src="js/PopupClass.js"></script>
-  <script src="js/UserInfoClass.js"></script>
-  <script src="js/FormValidatorClass.js"></script>
-  <script src="js/EditFormClass.js"></script>
-  <script src="js/PopupImgClass.js"></script>
-  <script src="js/API.js"></script>
-  <script src="js/init.js"></script>
+  <!--<script type="module" src="js/initialCards.js"></script>
+  <script type="module" src="js/CardClass.js"></script>
+  <script type="module" src="js/CardListClass.js"></script>
+  <script type="module" src="js/PopupClass.js"></script>
+  <script type="module" src="js/UserInfoClass.js"></script>
+  <script type="module" src="js/FormValidatorClass.js"></script>
+  <script type="module" src="js/EditFormClass.js"></script>
+  <script type="module" src="js/PopupImgClass.js"></script>
+  <script type="module" src="js/API.js"></script>-->
+  <script type="module" src="js/init.js"></script>
+  <!--<script type="module" src="src/index.js"></script>-->
 </body>
 
 </html>

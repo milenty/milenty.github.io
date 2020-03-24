@@ -5,6 +5,15 @@ const popupEditElement = document.querySelector(".popup-edit");
 const userEditButton = document.querySelector(".user-edit__button");
 const userInfoButton = document.querySelector(".user-info__button");
 
+import {API} from './API.js';
+import {Card} from './CardClass.js';
+import {CardList} from './CardListClass.js';
+import {PopupEdit} from './EditFormClass.js';
+import {FormValidator} from './FormValidatorClass.js';
+import {Popup} from './PopupClass.js';
+import {PopupImg} from './PopupImgClass.js';
+import {UserInfo} from './UserInfoClass.js';
+
 //Слушатели
 userEditButton.addEventListener("click", function () { popupEdit.open(); });
 userInfoButton.addEventListener("click", function () { popup.open(); });
