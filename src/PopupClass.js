@@ -1,3 +1,6 @@
+import {CardList} from "./CardListClass";
+import {Api} from "./API";
+
 export class Popup {
     constructor (popupElement1, cardList1, newCard1, api) {
       //Записываем узел с формой
@@ -48,7 +51,7 @@ export class Popup {
   open() {
     this.popupElement.querySelector(".popup__form").reset();
     //Делаем по умолчанию кнопку неактивной
-    popupElement.dispatchEvent(new Event("handleButtonDefault"));
+    this.popupElement.dispatchEvent(new Event("handleButtonDefault"));
 
 
     //Отображаем форму

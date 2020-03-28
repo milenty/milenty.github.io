@@ -12,7 +12,6 @@ export class FormValidator {
         const errorText = this.checkInputError(element);
         errorElement.textContent = errorText;
 
-        //input_validation_requared
         if (errorText.length > 0)
             errorElement.classList.remove("error-message__hidden");
         else
@@ -30,19 +29,16 @@ export class FormValidator {
     }
 
     checkInputError(element) {
-        //input_validation_requared
         if (element.classList.contains("input_validation_requared") && (element.value ===""))
         {
             return "Это обязательное поле";
         }
         else
-        //input_validation_2_30
         if (element.classList.contains("input_validation_2_30") && (element.value.length<2 || element.value.length>30))
         {
             return "Должно быть от 2 до 30 символов";
         }
         else
-        //input_validation_link
         if (element.classList.contains("input_validation_link") && (!element.validity.valid))
         {
             return "Здесь должна быть ссылка";
@@ -65,9 +61,6 @@ export class FormValidator {
 
 
     handleEvent(event) {
-        /** REVIEW: Можно лучше:
-        *   Неявное обращение к dom-узлу через this
-        **/
         const errorElement = this.formValidator.popupElement.querySelector(`#error-${event.target.id}`);
         this.formValidator.checkInputValidity(event.target, errorElement);
         this.formValidator.setSubmitButtonState();
@@ -89,7 +82,6 @@ export class FormValidator {
 
         if (this.submitButton.classList.contains("popup-edit__button"))
         {
-           // let buttonState = this.popupElement.querySelectorAll(".error-message:not(.error-message__hidden)").length == 0;
             if (buttonState) {
                 this.submitButton.removeAttribute("disabled");
                 this.submitButton.classList.remove("popup-edit__button_disabled");

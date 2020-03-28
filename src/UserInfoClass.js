@@ -1,9 +1,9 @@
+import {Api} from "./API"; 
+
+
 export class UserInfo {
     constructor (api){
         //Хранит информацию о данных пользователя
-        //this.setUserInfo(name1,infoJob1);
-        /*this.userInfoName = ;
-        this.userInfoJob = ;   */     
         this.api = api;
         this.getUserInfoServer();
     }
