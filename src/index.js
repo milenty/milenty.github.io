@@ -26,7 +26,15 @@ userEditButton.addEventListener("click", function () { popupEdit.open(); });
 userInfoButton.addEventListener("click", function () { popup.open(); });
 
 //API
-let api = new API("https://praktikum.tk/cohort8",{authorization : '92ce07cc-19a0-4fcd-93cc-06bf1d6f27bf'});
+/*let api = new API("https://praktikum.tk/cohort8",{authorization : '92ce07cc-19a0-4fcd-93cc-06bf1d6f27bf'});*/
+
+let api = new API({
+  baseUrl: NODE_ENV==='development' ? 'http://praktikum.tk/cohort8':'https://praktikum.tk/cohort8',
+  headers: {
+    authorization: '92ce07cc-19a0-4fcd-93cc-06bf1d6f27bf',
+    'Content-Type': 'application/json'
+  }
+});
 
 //Переменные
 let popupImg = new PopupImg(popupImgElement);
